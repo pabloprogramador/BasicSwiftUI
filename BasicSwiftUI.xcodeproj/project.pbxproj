@@ -11,6 +11,14 @@
 		6E5BDFE925FF74680001B096 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BDFE825FF74680001B096 /* ContentView.swift */; };
 		6E5BDFEB25FF746A0001B096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E5BDFEA25FF746A0001B096 /* Assets.xcassets */; };
 		6E5BDFEE25FF746A0001B096 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E5BDFED25FF746A0001B096 /* Preview Assets.xcassets */; };
+		6E5BDFF7260354D60001B096 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BDFF6260354D60001B096 /* ContentViewModel.swift */; };
+		6E5BDFFA2603B1C70001B096 /* CurseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BDFF92603B1C60001B096 /* CurseModel.swift */; };
+		6E5BDFFD2603B6840001B096 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BDFFC2603B6840001B096 /* DataService.swift */; };
+		6E5BE001261228C80001B096 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BE000261228C80001B096 /* System.swift */; };
+		6E5BE006261229080001B096 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BE005261229080001B096 /* Feedback.swift */; };
+		6E5BE00A261229240001B096 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BE009261229240001B096 /* View+Ext.swift */; };
+		6E5BE0112613323D0001B096 /* CourseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BE0102613323D0001B096 /* CourseDTO.swift */; };
+		6E5BE015261333EA0001B096 /* NetworkAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5BE014261333E90001B096 /* NetworkAgent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		6E5BDFEA25FF746A0001B096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E5BDFED25FF746A0001B096 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6E5BDFEF25FF746A0001B096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E5BDFF6260354D60001B096 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		6E5BDFF92603B1C60001B096 /* CurseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurseModel.swift; sourceTree = "<group>"; };
+		6E5BDFFC2603B6840001B096 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		6E5BE000261228C80001B096 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		6E5BE005261229080001B096 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		6E5BE009261229240001B096 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		6E5BE0102613323D0001B096 /* CourseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDTO.swift; sourceTree = "<group>"; };
+		6E5BE014261333E90001B096 /* NetworkAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAgent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +68,13 @@
 		6E5BDFE525FF74680001B096 /* BasicSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				6E5BE00F261332290001B096 /* DTO */,
+				6E5BE00E261331E80001B096 /* Models */,
+				6E5BE00D26132B080001B096 /* Views */,
+				6E5BE00C26132AE20001B096 /* Services */,
+				6E5BE004261228E30001B096 /* Feedback */,
+				6E5BDFFF261228A80001B096 /* Extensions */,
 				6E5BDFE625FF74680001B096 /* BasicSwiftUIApp.swift */,
-				6E5BDFE825FF74680001B096 /* ContentView.swift */,
 				6E5BDFEA25FF746A0001B096 /* Assets.xcassets */,
 				6E5BDFEF25FF746A0001B096 /* Info.plist */,
 				6E5BDFEC25FF746A0001B096 /* Preview Content */,
@@ -67,6 +88,57 @@
 				6E5BDFED25FF746A0001B096 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6E5BDFFF261228A80001B096 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6E5BE000261228C80001B096 /* System.swift */,
+				6E5BE009261229240001B096 /* View+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6E5BE004261228E30001B096 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				6E5BE005261229080001B096 /* Feedback.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		6E5BE00C26132AE20001B096 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6E5BDFFC2603B6840001B096 /* DataService.swift */,
+				6E5BE014261333E90001B096 /* NetworkAgent.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6E5BE00D26132B080001B096 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E5BDFE825FF74680001B096 /* ContentView.swift */,
+				6E5BDFF6260354D60001B096 /* ContentViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E5BE00E261331E80001B096 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E5BDFF92603B1C60001B096 /* CurseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E5BE00F261332290001B096 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				6E5BE0102613323D0001B096 /* CourseDTO.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +210,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5BE00A261229240001B096 /* View+Ext.swift in Sources */,
 				6E5BDFE925FF74680001B096 /* ContentView.swift in Sources */,
 				6E5BDFE725FF74680001B096 /* BasicSwiftUIApp.swift in Sources */,
+				6E5BDFFA2603B1C70001B096 /* CurseModel.swift in Sources */,
+				6E5BDFF7260354D60001B096 /* ContentViewModel.swift in Sources */,
+				6E5BE0112613323D0001B096 /* CourseDTO.swift in Sources */,
+				6E5BE015261333EA0001B096 /* NetworkAgent.swift in Sources */,
+				6E5BE001261228C80001B096 /* System.swift in Sources */,
+				6E5BE006261229080001B096 /* Feedback.swift in Sources */,
+				6E5BDFFD2603B6840001B096 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
