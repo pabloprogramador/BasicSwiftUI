@@ -99,7 +99,7 @@ extension ContentViewModel{
     static func loadCourses() -> Feedback<AppState, Event> {
         Feedback { (state: AppState) -> AnyPublisher<Event, Never> in
             guard case .loading = state else { return Empty().eraseToAnyPublisher() }
-            return DataService.fecthCoursesPro()
+            return DateService.Get.fecthCourses()
                 .map({Event.onLoaded(transformDTO(coursesDTO: $0))})
                 .catch {Just(Event.onError($0))}
                 .eraseToAnyPublisher()
